@@ -30,3 +30,20 @@ export interface Application {
   submittedAt: Date;
   lastUpdated: Date;
 }
+
+export interface JobListing {
+  id: string;
+  title: string;
+  company: string;
+  location: string;
+  salary?: string;
+  description: string;
+  requirements: string[];
+  type: 'remote' | 'onsite' | 'hybrid';
+  source: {
+    name: 'LinkedIn' | 'Indeed' | 'GlassDoor' | 'Direct';
+    url: string;
+    logo: string;
+  };
+  postedAt: Date;
+}

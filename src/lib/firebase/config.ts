@@ -4,13 +4,13 @@ import { getFirestore } from 'firebase/firestore';
 import { getAnalytics } from 'firebase/analytics';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyA3OLVNuNkUiGW0Ghpn8U3uY3CpOrAON5I",
-  authDomain: "practicumo.firebaseapp.com",
-  projectId: "practicumo",
-  storageBucket: "practicumo.firebasestorage.app",
-  messagingSenderId: "56744604231",
-  appId: "1:56744604231:web:09f6c8d22b5f95dfbc3762",
-  measurementId: "G-WJ885MPDVV"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 };
 
 // Initialize Firebase services
